@@ -3,3 +3,9 @@ MANIFEST
 dist/
 build/
 
+debian/files
+debian/fluxgui.debhelper.log
+debian/fluxgui.postinst.debhelper
+debian/fluxgui.prerm.debhelper
+debian/fluxgui.substvars
+debian/fluxgui/
