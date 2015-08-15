@@ -2,6 +2,13 @@
 
 from distutils.core import setup
 
+data_files=[('share/icons/hicolor/scalable/apps', ['fluxgui.svg', 'fluxgui-light.svg', 'fluxgui-dark.svg']),
+        ('share/applications', ['desktop/fluxgui.desktop'])]
+
+import os
+if os.path.exists("xflux"):
+    data_files.append( ('bin', ['xflux']) )
+
 setup(name = "f.lux indicator applet",
     version = "1.1.8",
     description = "f.lux indicator applet - better lighting for your computer",
@@ -12,9 +19,7 @@ setup(name = "f.lux indicator applet",
     package_dir = {'fluxgui' : 'src/fluxgui'},
     packages = ["fluxgui",],
     package_data = {"fluxgui" : ["*.glade"] },
-    data_files=[('share/icons/hicolor/scalable/apps', ['fluxgui.svg', 'fluxgui-light.svg', 'fluxgui-dark.svg']),
-            ('share/applications', ['desktop/fluxgui.desktop']),
-            ('bin', ['xflux']),],
+    data_files = data_files,
     scripts = ["fluxgui"],
     long_description = """f.lux indicator applet is an indicator applet to
     control xflux, an application that makes the color of your computer's
