@@ -20,16 +20,21 @@ sudo yum install gnome-python2-gconf pexpect python-appindicator git
 Debian:
 
 ```
-sudo apt-get install python-gconf python-pexpect python-appindicator git
+sudo apt-get install python-gconf python-pexpect python-appindicator git fakeroot
 ```
 
-###STEP 2 Download the source code and xflux
-
-32bit:
+###STEP 2 Download the source code
 
 ```
 git clone https://github.com/Kilian/f.lux-indicator-applet.git
 cd f.lux-indicator-applet
+```
+
+###STEP 3 Download xflux (not required for Debian/Ubuntu)
+
+32bit:
+
+```
 wget https://justgetflux.com/linux/xflux-pre.tgz
 tar zxvf xflux-pre.tgz
 ```
@@ -37,13 +42,21 @@ tar zxvf xflux-pre.tgz
 64bit:
 
 ```
-git clone https://github.com/Kilian/f.lux-indicator-applet.git
-cd f.lux-indicator-applet
 wget https://justgetflux.com/linux/xflux64.tgz
 tar zxvf xflux64.tgz
 ```
 
-###STEP 3 Build and install
+
+###STEP 4 Build and install
+
+Debian/Ubuntu:
+
+```
+dpkg-buildpackage -rfakeroot -b -uc -us
+sudo dpkg -i ../flux_1.1.8_all.deb (check filename)
+```
+
+Other distros:
 
 ```
 python setup.py build
