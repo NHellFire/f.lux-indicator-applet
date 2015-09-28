@@ -20,7 +20,7 @@ sudo yum install gnome-python2-gconf pexpect python-appindicator git
 Debian:
 
 ```
-sudo apt-get install python-gconf python-pexpect python-appindicator git fakeroot
+sudo apt-get install python-gconf python-pexpect python-appindicator git fakeroot debhelper python-support
 ```
 
 ###STEP 2 Download the source code
