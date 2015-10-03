@@ -20,7 +20,7 @@ class Settings(object):
             self.has_set_prefs = False
             self._zipcode = '90210'
             self.autostart=True
-        if int(self._color) < 2700 or not self._color:
+        if int(self._color) < 1200 or not self._color:
             # upgrade from previous version
             temperature_keys = {
                     '0':  '2700',
