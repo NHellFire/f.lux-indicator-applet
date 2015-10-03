@@ -6,8 +6,9 @@ fluxgui (1.1.8-1~vivid) vivid; urgency=medium
   * Remove xflux binary
 
   [ Nathan Rennie-Waldock ]
-  * Drop ia32-libs dependency
   * Download xflux binary automatically on install
+  * Update dependencies properly
+  * Updated colour temperature choices
 
  -- Nathan Rennie-Waldock <nathan.renniewaldock@gmail.com>  Sat, 15 Aug 2015 22:56:25 +0100
 
