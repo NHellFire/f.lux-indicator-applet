@@ -233,9 +233,7 @@ f.lux indicator applet made by Kilian Valkhof</property>
                     <property name="can_focus">False</property>
                     <property name="has_tooltip">True</property>
                     <property name="tooltip" translatable="yes">Fill in your preferred nighttime color temperature</property>
-                    <property name="items" translatable="yes">Ember (1200K)
-Candle (1900K)
-Dim Incandescent (2300K)
+                    <property name="items" translatable="yes">Dim Incandescent (2300K)
 Incandescent (2700K)
 Halogen (3400K)
 Fluorescent (4200K)
