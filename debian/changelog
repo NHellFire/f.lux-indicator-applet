@@ -1,6 +1,12 @@
+fluxgui (1.1.8-4~vivid) vivid; urgency=medium
+
+  * Add debhelper tokens to post{inst,rm}
+    - Fixes module not being found by python
+
+ -- Nathan Rennie-Waldock <nathan.renniewaldock@gmail.com>  Mon, 01 Feb 2016 21:00:40 +0000
+
 fluxgui (1.1.8-3~vivid) vivid; urgency=medium
 
-  [ nathan ]
   * Add some text to __init__.py
     - Was being left out package as it was empty
 
