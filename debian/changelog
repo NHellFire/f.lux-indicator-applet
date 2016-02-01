@@ -1,3 +1,9 @@
+fluxgui (1.1.8-2~vivid) vivid; urgency=medium
+
+  * Add missing python-glade2 dependency
+
+ -- Nathan Rennie-Waldock <nathan.renniewaldock@gmail.com>  Mon, 01 Feb 2016 16:56:54 +0000
+
 fluxgui (1.1.8-1~vivid) vivid; urgency=medium
 
   * Non-maintainer upload
